@@ -1,0 +1,9 @@
+@import "../../scss/variables.scss";
+
+.search-input {
+  height: 40px;
+  display: flex;
+  padding: 0px 8px;
+  border: 1px solid $outline;
+  border-radius: 8px;
+}

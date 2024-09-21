@@ -1,0 +1,57 @@
+@import "../../scss/variables.scss";
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 8px;
+  margin-right: 10px;
+
+  &__box {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    accent-color: $primary;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    cursor: pointer;
+
+    &--disabled {
+      opacity: 0.5;
+    }
+
+    &__text {
+      flex-grow: 1;
+      gap: 4px;
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        color: $contrast-dark;
+        margin: 0;
+      }
+
+      &__subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.5px;
+        text-align: left;
+        color: $grey;
+        margin: 0;
+      }
+    }
+
+    &__image {
+      width: 30px;
+      height: 18px;
+    }
+  }
+}

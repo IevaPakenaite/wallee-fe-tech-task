@@ -1,0 +1,25 @@
+@import "../../scss/variables.scss";
+
+.panel {
+  width: 372px;
+  border-radius: 8px;
+  border: 1px solid $outline;
+  padding: 24px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+
+  &__list {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 204px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+}
